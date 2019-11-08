@@ -1,3 +1,11 @@
 "use strict";
-var isDone = false;
-var age = "name";
+function test(x) {
+    if (typeof x == "number") {
+        return 2019;
+    }
+    else if (typeof x == "string") {
+        return "Hello";
+    }
+}
+console.log(test(1)); // => 2019
+console.log(test("1")); // => hello
