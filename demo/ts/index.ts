@@ -1,6 +1,3 @@
-let arr = [1, false, "hello"];
-for(let val of arr) {
-    console.log(val); // 1 false hello
-}
-let s:string = "";
-s = 10;
+import tool = require('./tool');
+console.log(tool.name); // => 木子李
+tool.sayHello(); // Hello
