@@ -1,13 +1,6 @@
-function test(x: number): number;
-function test(x: string): string;
-function test(x: number | string): any {
-    if(typeof x == "number") {
-        return 2019;
-    }else if(typeof x == "string") {
-        return "Hello";
-    }
+let arr = [1, false, "hello"];
+for(let val of arr) {
+    console.log(val); // 1 false hello
 }
-
-console.log(test(1)); // => 2019
-console.log(test("1")); // => hello
-
+let s:string = "";
+s = 10;
