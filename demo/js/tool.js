@@ -1,7 +1,3 @@
 "use strict";
-module.exports = {
-    name: "木子李",
-    sayHello() {
-        console.log("Hello");
-    }
-};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.a = 10;

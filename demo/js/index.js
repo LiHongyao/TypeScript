@@ -1,5 +1,15 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const tool = require("./tool");
-console.log(tool.name); // => 木子李
-tool.sayHello(); // Hello
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class Student extends Person {
+    constructor(name) {
+        super(name);
+    }
+    // 实现抽象方法
+    sayHi() {
+        console.log("Hello");
+    }
+}

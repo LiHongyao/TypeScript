@@ -1,8 +1,1 @@
-
-export = {
-    name: "木子李",
-    sayHello() {
-        console.log("Hello");
-    }
-};
-
+export const a: number = 10;
