@@ -1,19 +1,6 @@
-
-abstract class Person { // 定义抽象类
-    name: string;
-    constructor(name: string) {
-        this.name = name;
-    }
-    abstract sayHi(): void; // 定义抽象方法
+function loggingIdentity<T>(arg: T): T {
+    console.log(arg.length);
+    return arg;
 }
 
-
-class Student extends Person { 
-    constructor(name: string) {
-        super(name)
-    }
-    // 实现抽象方法
-    sayHi() {
-        console.log("Hello");
-    }
-}
+// index.ts(2,19): error TS2339: Property 'length' does not exist on type 'T'.

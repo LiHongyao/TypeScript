@@ -1,15 +1,6 @@
 "use strict";
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
+function loggingIdentity(arg) {
+    console.log(arg.length);
+    return arg;
 }
-class Student extends Person {
-    constructor(name) {
-        super(name);
-    }
-    // 实现抽象方法
-    sayHi() {
-        console.log("Hello");
-    }
-}
+// index.ts(2,19): error TS2339: Property 'length' does not exist on type 'T'.
