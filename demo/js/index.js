@@ -1,6 +1,7 @@
 "use strict";
-function loggingIdentity(arg) {
-    console.log(arg.length);
-    return arg;
+class GenericNumber {
 }
-// index.ts(2,19): error TS2339: Property 'length' does not exist on type 'T'.
+let myGenericNumber = new GenericNumber();
+myGenericNumber.zeroValue = 0;
+myGenericNumber.message = "Hello";
+myGenericNumber.add = function (x, y) { return x + y; };
