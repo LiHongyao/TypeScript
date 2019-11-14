@@ -7,4 +7,4 @@ class GenericNumber<T, U> {
 let myGenericNumber = new GenericNumber<number, string>();
 myGenericNumber.zeroValue = 0;
 myGenericNumber.message = "Hello";
-myGenericNumber.add = function(x, y) { return x + y; };
+myGenericNumber.add = function(x, y) { return x + y; };,
