@@ -3,13 +3,11 @@
 
 # 一、概述
 
-- TypeScript语言用于大规模应用的JavaScript开发。
-
-- TypeScript支持类型，是JavaScript的超集且可以编译成纯JavaScript代码。 
-- TypeScript兼容所有浏览器，所有宿主环境，所有操作系统。 
-- TypeScript是开源的。
-
-TypeScript目前还在积极的开发完善之中，不断地会有新的特性加入进来。 因此本手册也会紧随官方的每个commit，不断地更新新的章节以及修改措词不妥之处。
+- TypeScript 语言用于大规模应用的JavaScript开发。
+- TypeScript 支持类型，是JavaScript的超集且可以编译成纯JavaScript代码。 
+- TypeScript 兼容所有浏览器，所有宿主环境，所有操作系统。 
+- TypeScript 是开源的。
+- TypeScript 文件后缀名为`.ts`。
 
 # 二、安装
 
@@ -22,14 +20,16 @@ $ yarn add typescript
 
 ```shell
 $ ./node_modules/.bin/tsc --version
-Version 3.6.4
+Version 3.7.2
 ```
 
 # 三、编译
 
+## 1. 在线编译
+
 http://www.typescriptlang.org/play/index.html
 
-## 1. tsc
+## 2. tsc
 
 ```shell
 # 编译文件
@@ -38,7 +38,7 @@ $ ./node_modules/.bin/tsc index.ts  --outfile index.js
 $ ./node_modules/.bin/tsc ./ts  --outfile ./js
 ```
 
-## 2. vscode
+## 3. vscode
 
 1. 首先在工程首页自定义 -> 工具和语言中 选择 "Typescript" 进行安装
 
