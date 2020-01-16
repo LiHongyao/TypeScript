@@ -1,5 +1,5 @@
-- typescript 中文手册：https://www.tslang.net/
-- https://ts.xcatliu.com/
+- [TypeScript 中文手册 >>](https://www.tslang.cn/)
+- [TypeScript 入门教程 >>](https://ts.xcatliu.com/)
 
 # 一、概述
 
@@ -49,15 +49,17 @@ $ ./node_modules/.bin/tsc ./ts  --outfile ./js
    ```json
    {
      "compilerOptions" : {
-       "target": "es5", // 编译目标平台
-       "outDir": "./",    // 输出目录
+       "target": "es5",
+       "outDir": "./",    
      }
    }
    ```
 
 4. 输入快捷键 `ctr/cmd + shfit + b` 选择任务进行编译
 
+## 4. Hbuilder
 
+插件市场安装TypeScript编译工具，鼠标右键 -> 外部命令 -> TS编译
 
 
 
