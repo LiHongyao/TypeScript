@@ -1,3 +1,4 @@
+- [TypeScript 官方文档 >>](https://www.typescriptlang.org/)
 - [TypeScript 中文手册 >>](https://www.tslang.cn/)
 - [TypeScript 入门教程 >>](https://ts.xcatliu.com/)
 
@@ -9,21 +10,35 @@
 - TypeScript 是开源的。
 - TypeScript 文件后缀名为`.ts`。
 
-# 二、安装
+# 二、优势
 
-```shell
-$ npm install typescript
-$ yarn add typescript
-```
+- 类型检查
+- 更好的代码提示
+- 代码语义更清晰易懂
 
-查看版本：
+# 三、环境
 
-```shell
-$ ./node_modules/.bin/tsc --version
-Version 3.7.2
-```
+1. 安装Node：https://nodejs.org/en/
 
-# 三、编译
+2. 安装TS
+
+   ```
+   $ npm install typescript
+   $ yarn add typescript
+   ```
+
+   查看版本：
+
+   ```shell
+   $ ./node_modules/.bin/tsc --version
+   Version 3.7.2
+   ```
+
+3. 安装VS插件
+
+   - Prettier - Code formatter
+
+# 四、编译
 
 ## 1. 在线编译
 
