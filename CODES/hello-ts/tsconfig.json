@@ -21,6 +21,6 @@
     "paths": {} /** 模块名到基于 baseUrl 的路径映射的列表 */
   },
   /** 5.指定编译文件或排除指定编译文件 */
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "typings/index.d.ts"],
   "exclude": ["node_modules"]
 }
