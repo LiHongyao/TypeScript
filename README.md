@@ -3,17 +3,21 @@
 
 # 一、概述
 
-TypeScript 是 JavaScript 类型的超集，它可以编译成纯 JavaScript，TypeScript 可以在任何浏览器、任何计算机和任何操作系统上运行，并且是开源的。
+`TypeScript` 是一种由微软开发的自由和开源的编程语言。
 
-本知识库主要是记录基础语法和日常总结。
+对比 `JS`，`TS`是 `JS` 的**超集**，简单的说就是在 `JavaScript` 的基础上加入了**类型系统**，让每个参数都有明确的意义，从而带来了更加**智能**的提示。
 
-# 二、优势
+相对于`JS`而言，`TS`属于**强类型**语言，所以对于项目而言，会使代码更加规范，从而解决了大型项目代码的复杂性。
+
+所以，`TS` 的优势如下：
 
 - 类型检查
 - 更好的代码提示
 - 代码语义更清晰易懂
 
-# 三、环境
+> **Tips：**浏览器是不识别`TS`的，所以在编译的时候，`TS`文件会先编译为`JS`文件。
+
+# 二、环境
 
 搭建 TypeScript 环境
 
@@ -53,7 +57,7 @@ $ type nul > tsconfig.json
 $ touch tsconfig.json
 ```
 
-```json
+```js
 {
   "compilerOptions": {
     /** 1.基础选项 */
@@ -84,7 +88,7 @@ $ touch tsconfig.json
 
 5）**npm scripts**
 
-```json
+```js
 "scripts": {
   "build": "tsc --watch", /** 实时编译 */
   "start": "npx nodemon ./lib/index.js" /** 实时执行 */
@@ -126,4 +130,13 @@ console.log(usr);s
 ```
 
 好的，那接下来，就正式开启我们的 TypeScript 学习之旅吧~
+
+# 三、TS的基本数据类型
+
+这里将TS的数据类型简单的进行下归类：
+
+- 基本类型：`string`、`number`、`boolean`、`symbol`、`bigint`、`null`、`undefined`
+- 引用类型：`array`、 `Tuple`、 `object`、`function`
+- 特殊类型：`any`、`unknow`、`void`、`never`、`Enum`(枚举)
+- 其他类型：`类型推理`、`字面量类型`、`交叉类型`
 
